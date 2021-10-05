@@ -1,0 +1,304 @@
+{
+	"ABI version": 2,
+	"header": ["pubkey", "time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"network","type":"uint8"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "addDicegame",
+			"inputs": [
+				{"name":"addr","type":"address"},
+				{"name":"minBet","type":"uint128"},
+				{"name":"maxBetDivider","type":"uint16"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "start",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "_start",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "startGameMenu",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "showCurrentGameStats",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "showRollSummary",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "checkBet",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "switchDice",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "doubleTheBet",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "setTheBet",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "saveBet",
+			"inputs": [
+				{"name":"value","type":"uint128"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getMaxBet",
+			"inputs": [
+				{"name":"gameIndex","type":"uint32"}
+			],
+			"outputs": [
+				{"name":"maxBet","type":"uint128"}
+			]
+		},
+		{
+			"name": "getMinBet",
+			"inputs": [
+				{"name":"gameIndex","type":"uint32"}
+			],
+			"outputs": [
+				{"name":"minBet","type":"uint128"}
+			]
+		},
+		{
+			"name": "loadGamesBalances",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "parseAccountsResponse",
+			"inputs": [
+				{"name":"statusCode","type":"int32"},
+				{"name":"content","type":"bytes"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "parseAccountsJson",
+			"inputs": [
+				{"name":"result","type":"bool"},
+				{"components":[{"components":[{"components":[{"name":"id","type":"address"},{"name":"balance","type":"uint128"}],"name":"accounts","type":"tuple[]"}],"name":"data","type":"tuple"}],"name":"obj","type":"tuple"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "loadCurrentGameStats",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "parseStatsResponse",
+			"inputs": [
+				{"name":"statusCode","type":"int32"},
+				{"name":"content","type":"bytes"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "parseStatsJson",
+			"inputs": [
+				{"name":"result","type":"bool"},
+				{"components":[{"components":[{"name":"aggregateMessages","type":"uint128[]"}],"name":"data","type":"tuple"}],"name":"obj","type":"tuple"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "loadCurrentGameBalance",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "saveGameBalance",
+			"inputs": [
+				{"name":"nanotokens","type":"uint128"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "rollDice",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "onRollSuccess",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "saveKeyHandle",
+			"inputs": [
+				{"name":"handle","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "selectDicegame",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "setDicegame",
+			"inputs": [
+				{"name":"value","type":"bytes"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "selectWallet",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "saveWallet",
+			"inputs": [
+				{"name":"value","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getRequiredInterfaces",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"interfaces","type":"uint256[]"}
+			]
+		},
+		{
+			"name": "getDebotInfo",
+			"id": "0xDEB",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"name","type":"bytes"},
+				{"name":"version","type":"bytes"},
+				{"name":"publisher","type":"bytes"},
+				{"name":"key","type":"bytes"},
+				{"name":"author","type":"bytes"},
+				{"name":"support","type":"address"},
+				{"name":"hello","type":"bytes"},
+				{"name":"language","type":"bytes"},
+				{"name":"dabi","type":"bytes"},
+				{"name":"icon","type":"bytes"}
+			]
+		},
+		{
+			"name": "onError",
+			"inputs": [
+				{"name":"sdkError","type":"uint32"},
+				{"name":"exitCode","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "setIcon",
+			"inputs": [
+				{"name":"icon","type":"bytes"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "upgrade",
+			"inputs": [
+				{"name":"state","type":"cell"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getDebotOptions",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"options","type":"uint8"},
+				{"name":"debotAbi","type":"bytes"},
+				{"name":"targetAbi","type":"bytes"},
+				{"name":"targetAddr","type":"address"}
+			]
+		},
+		{
+			"name": "setABI",
+			"inputs": [
+				{"name":"dabi","type":"bytes"}
+			],
+			"outputs": [
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	]
+}

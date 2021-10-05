@@ -1,0 +1,76 @@
+{
+	"ABI version": 2,
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"ownerAddress","type":"address"},
+				{"name":"minBet","type":"uint128"},
+				{"name":"maxBetDivider","type":"uint16"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "roll",
+			"inputs": [
+				{"name":"betOnFirst","type":"bool"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "setMinBet",
+			"inputs": [
+				{"name":"minBet","type":"uint128"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "setMaxBetDivider",
+			"inputs": [
+				{"name":"maxBetDivider","type":"uint16"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "setRewardPercent",
+			"inputs": [
+				{"name":"rewardPercent","type":"uint16"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "_minBet",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"_minBet","type":"uint128"}
+			]
+		},
+		{
+			"name": "_maxBetDivider",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"_maxBetDivider","type":"uint16"}
+			]
+		},
+		{
+			"name": "_ownerAddress",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"_ownerAddress","type":"address"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	]
+}
