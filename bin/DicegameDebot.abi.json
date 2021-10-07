@@ -21,6 +21,16 @@
 			]
 		},
 		{
+			"name": "updateDicegame",
+			"inputs": [
+				{"name":"addr","type":"address"},
+				{"name":"minBet","type":"uint128"},
+				{"name":"maxBetDivider","type":"uint16"}
+			],
+			"outputs": [
+			]
+		},
+		{
 			"name": "start",
 			"inputs": [
 			],

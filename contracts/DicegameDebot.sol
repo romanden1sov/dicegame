@@ -65,6 +65,16 @@ contract DicegameDebot is Debot, Upgradable
         _games.push(GameParams(addr, minBet, maxBetDivider, 0, 0, 0));
     }
 
+    function updateDicegame(address addr, uint128 minBet, uint16 maxBetDivider) public onlyOwner {
+        uint32 i;
+        for (i = 0; i < _games.length; i++) {
+            if (_games[i].addr == addr) {
+                _games[i].minBet = minBet;
+                _games[i].maxBetDivider = maxBetDivider;
+            }
+        }
+    }
+
     //========================================
     /// @notice Entry point function for DeBot.
     function start() public override {
